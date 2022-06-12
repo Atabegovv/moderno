@@ -71,8 +71,8 @@ function styleLibs(){
 }
 
 function styles(){
-    return src('app/scss/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
+    return src('app/scss/**/*.scss')
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
