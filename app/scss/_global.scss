@@ -19,10 +19,22 @@ html{
  }
  a{
     text-decoration: none;
-    color: #fff;
  }
  .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
  }
+ .container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+ }
+.title{
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 700;
+    color: $bg;
+    text-align: center;
+    margin-bottom: 50px;
+}
