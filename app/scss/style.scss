@@ -275,3 +275,65 @@
       }
    }
 }
+
+// section advantages
+
+.advantages {
+   padding: 110px 0;
+   background-color: $bg;
+}
+
+.advantages__title {
+   color: #fff;
+}
+
+.advantages__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.advantages__item {
+   max-width: 370px;
+   padding: 0 15px;
+   text-align: center;
+   &:hover{
+      .advantages__item-images{
+         background-color: $green;
+      }
+      .advantages__item-title{
+         color: $green;
+      }
+
+   }
+}
+.advantages__item-images{
+   width: 114px;
+   height: 114px;
+   border-radius: 50%;
+   background-color: #fff;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   img{
+      margin-top: 20px;
+   }
+   transition: all .5s;
+}
+.icosvg-1 img{
+   width: 70px;
+}
+.icosvg-2 img{
+   width: 70px;
+}
+.icosvg-3 img{
+   width: 85px;
+}
+
+
+.advantages__item-title {
+   font-size: 24px;
+   color: #fff;
+   margin-bottom: 20px;
+   transition: all .5s;
+}
+.advantages__item-text {
+   font-size: 15px;
+}
