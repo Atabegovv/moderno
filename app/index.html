@@ -156,6 +156,7 @@
                                     <a href="#" class="basket__btn-green">Go to Cart </a>
                                     <a href="#" class="basket__btn-red">Go to Checkout</a>
                                 </div>
+                                
                             </div>
                         </div>
                         <a href="#" class="user">
@@ -185,6 +186,10 @@
                             </div>
                         </a>
 
+                        <a href="#" class="user__btn">
+                            <div class="icon-user"></div>
+                        </a>
+
                         <a href="#" class="header__btn header__btn-logout login--on">logout</a>
                         <a href="#" class="header__btn header__btn-login  login--off">login</a>
                         <a href="#" class="header__btn header__btn-register login--off">register</a>
@@ -194,8 +199,14 @@
         </div>
         <div class="header__menu">
             <div class="container">
+               
                 <nav class="menu">
-                    <ul>
+                    <div class="header__burger-menu">
+                        <div class="header__burger-row"></div>
+                        <div class="header__burger-row"></div>
+                        <div class="header__burger-row"></div>
+                    </div>
+                    <ul class="menu__list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">WordPress</a></li>
@@ -900,7 +911,7 @@
         <div class="container">
             <div class="footer__menu">
                 <div class="footer__menu-inner">
-                    <div class="footer__col">
+                    <div class="footer__col footer__about-company ">
                         <div class="footer__col-title">
                             About Company
                         </div>
@@ -946,12 +957,12 @@
                         </div>
                     </div>
 
-                    <div class="footer__col">
+                    <div class="footer__col footer__social">
                         <div class="footer__col-title">
                             Follow Us On
                         </div>
                         <div class="footer__col-social">
-                            <!-- можно исп. css-sprites -->
+                            
                             <ul>
                                 <li><a href="#">
                                         <img src="images/facebook.png" alt="">
