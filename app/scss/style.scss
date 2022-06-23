@@ -362,6 +362,26 @@
 }
 
 
+
+.user__btn{
+   display: none;
+   width: 90px;
+   height: 90px;
+   background-color: #fff;
+   position: absolute;
+   right: 0;
+   top: 0;
+   
+}
+.icon-user{
+   line-height: 90px;
+   &::before{
+      color: $bg;
+      font-size: 24px;
+   }
+   
+}
+
 .header__btn{
    padding: 4px;
    width: 72px;
@@ -395,6 +415,21 @@
 
 .header__menu {
    background-color: $bg;
+}
+
+.header__burger-menu {
+   display: none;
+   cursor: pointer;
+}
+.header__burger-row {
+   width: 30px;
+   height: 3px;
+   background-color: #fff;
+   color: $bg;
+   & + .header__burger-row{
+      margin-top: 5px;
+   }
+  
 }
 .menu {
    height: 60px;
@@ -868,6 +903,7 @@
 }
 
 
+// можно исп. css-sprites
 .footer__col-social{
    padding: 42px 0 30px;
    li{
@@ -930,7 +966,7 @@
 }
 .footer__copy {
    border-top: 1px solid #546e7a;
-   height: 74px;
+   min-height: 74px;
    font-size: 14px;
 }
 .footer__copy-text {
@@ -938,3 +974,12 @@
    padding: 22px 10px 27px;
 }
  
+
+
+
+
+
+
+
+// media requests
+@import 'media';
