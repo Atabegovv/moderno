@@ -412,6 +412,102 @@
 }
 //end btn
 
+//login-popup
+#login-popup{
+   max-width: 730px;
+   width: 100%;
+   background-color: $green;
+   padding: 90px 160px 100px;
+   
+   form{
+      label{
+         position: relative;
+         &.login-popup-name::before{
+            content: "\f007";
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            top: -5px;
+            left: 18px;
+         }
+         &.login-popup-pass::before{
+            content: "\f023";
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            bottom: -5px;
+            right: 372px;
+         }
+      }
+      input{
+         outline: none;
+         max-width: 400px;
+         width: 100%;
+         height: 43px;
+         color: #fff;
+         border: none;
+         background-color: #76ae36;
+         padding-left: 40px;
+         &::placeholder{
+            color: #fff;
+         }
+         &:first-child{
+            margin-bottom: 8px;
+         }
+      }
+      button{
+         border: none;
+         text-transform: uppercase;
+         font-weight: 700;
+         margin-top: 20px;
+         font-size: 14px;
+         line-height: 16px;
+         padding: 18px 42px 15px;
+         cursor: pointer;
+         margin-right: 10px;
+      }
+      .creat-acc{
+         margin-top: 20px;
+         font-size: 18px;
+         color: #fff;
+         background-color: #76ae36;
+         padding: 13px 37px 14px 66px;
+         position: relative;
+         &::before{
+            content: '\f044';
+            font-family: 'icomoon';
+            font-size: 18px;
+            position: absolute;
+            top: 12px;
+            left: 40px;
+         }
+         
+      }
+      .lost-pass{
+            display: block;
+            margin-top: 15px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            
+         }
+   }
+}
+.popup-title {
+   color: #fff;
+   font-size: 48px;
+   line-height: 50px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 40px;
+}
+.fancybox-button svg path {
+   fill: #fff;
+}
+
 
 .header__menu {
    background-color: $bg;

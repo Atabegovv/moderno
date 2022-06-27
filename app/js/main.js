@@ -19,11 +19,7 @@ $(function () {
         $('.menu__list').slideToggle();
     });
 
-    // $('.user__btn').on('click', function(){
-    //     $('.basket').slideToggle();
-    //     $('.user').slideToggle();
-    //     $('.header__btn-logout.login--on').slideToggle();
-    // });
+
 
     
 
