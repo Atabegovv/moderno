@@ -19,6 +19,13 @@ $(function () {
         $('.menu__list').slideToggle();
     });
 
+    
+    //tabs 
+    $(".tab_item").not(":first").hide();
+    $(".product-one__tabs .tab").click(function() {
+	$(".product-one__tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
 
 
     
