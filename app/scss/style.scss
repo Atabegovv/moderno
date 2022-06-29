@@ -1493,6 +1493,69 @@
 }
 
 
+//page-404
+
+.page404{
+   background-color: $grey;
+   margin-bottom: 150px;
+   &__head{
+      padding: 23px 30px;
+      background-color: #fff;
+      border: 1px solid #dcdcdc;
+      color: $bg;
+      font-size: 24px;
+      font-weight: 500;
+   }
+   &__body{
+      border-left: 1px solid #dcdcdc;
+      border-right: 1px solid #dcdcdc;
+      background-color: $green;
+      padding: 120px 0 100px;
+      text-align: center;
+      color: #fff;
+      &-title{
+         font-size: 300px;
+         line-height: 300px;
+         font-weight: 800;
+         margin-bottom: 40px;
+         position: relative;
+         &::after{
+            content: "";
+            background-image: url(../images/page404.png);
+            width: 157px;
+            height: 301px;
+            position: absolute;
+            top: -15px;
+            right: 150px;
+         }
+      }
+      &-subtitle{
+         font-size: 30px;
+         margin-bottom: 25px;
+      }
+      &-text{
+         font-size: 18px;
+         font-weight: 500;
+         max-width: 570px;
+         margin: 0 auto;
+         margin-bottom: 55px;
+      }
+      a{
+         padding: 15px 30px;
+         color: #fff;
+         font-size: 14px;
+         font-weight: 700;
+         border: 2px solid #fff;
+         border-radius: 2px;
+         text-transform: uppercase;
+         transition: all .3s;
+         &:hover{
+            background-color: #fff;
+            color: $green;
+         }
+      }
+   }
+}
 
 
 // media requests
