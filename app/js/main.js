@@ -27,6 +27,13 @@ $(function () {
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
 
+    //settings tabs
+    $(".form__tab-content").not(":first").hide();
+    $(".settings__wrapper .aside-tab").click(function() {
+	$(".settings__wrapper .aside-tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".form__tab-content").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+
 
     
 
