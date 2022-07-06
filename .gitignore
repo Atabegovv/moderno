@@ -3,6 +3,7 @@
 .LSOverride
 .vs
 
+npm-shrinkwrap.json
 
 node_modules/
 app/css/

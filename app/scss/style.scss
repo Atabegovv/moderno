@@ -1955,5 +1955,140 @@
    }
 }
 
+
+
+//upload product
+.upload{
+   background-color: $grey;
+   padding-bottom: 110px;
+   text-transform: capitalize;
+   &-form{
+      border: 1px solid #dedede;
+      background-color: #fff;
+      &__title{
+         padding: 0 30px;
+         font-size: 24px;
+         line-height: 60px;
+         font-weight: 500;
+         color: $bg;
+         border-bottom: 1px solid #dedede;
+         margin-bottom: 40px;
+      }
+      &__line{
+         padding: 0 45px;
+         display: flex;
+         justify-content: start;
+         min-height: 35px;
+         margin-bottom: 20px;
+         label{
+            color: #222;
+            max-width: 175px;
+            width: 100%;
+         }
+         input,
+         select,
+         textarea{
+            width: 100%;
+            outline: inherit;
+            border: 1px solid #dedede;
+            padding-left: 15px;
+         }
+         textarea{
+            padding-top: 10px;
+            resize: none;
+         }
+         // input[type=file]{
+         //    padding-top: 7px;
+         // }
+         .jq-selectbox{
+            width: 100%;
+            outline: inherit;
+            border: 1px solid #dedede;
+            padding-left: 0px;
+            line-height: 40px;
+            
+         }
+         .jq-selectbox__select {
+            height: 35px;
+            padding: 0 15px;
+            border: none;
+            border-bottom-color: transparent;
+            border-radius: 0px;
+            background: #fff;
+            box-shadow: none;
+            font: 14px/35px Roboto, sans-serif;
+            color: #707070;
+            text-shadow: none;
+            outline: inherit;
+         }
+         .jq-selectbox__trigger {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0px;
+            height: 100%;
+            border-left: none;
+        }
+        .jq-selectbox__dropdown {
+            width: 100.3%;
+            margin: 0 -1px;
+            padding: 0;
+            border: 1px solid #dedede;
+            border-radius: 0px;
+            background: #FFF;
+            box-shadow: none;
+            font: 14px/24px Roboto,sans-serif;
+         li{
+            padding-left: 15px;
+         }
+        }
+        .jq-selectbox.focused .jq-selectbox__select {
+            border: none;
+        }
+        .jq-file {
+            width: 100%;
+            border-radius: 0px;
+            box-shadow: none;
+         }
+         .jq-file__name {
+            width: 100%;
+            height: 35px;
+            padding: 0 15px 0 115px;
+            border: 1px solid #dedede;
+            border-bottom-color: #dedede;
+            border-radius: 0px;
+            background: #FFF;
+            box-shadow: none;
+            font-size: 12px;
+         }
+         .jq-file__browse {
+            position: absolute;
+            top: 4px;
+            left: 15px;
+            width: 88px;
+            padding: 0 10px;
+            border: 1px solid #dedede;
+            border-radius: 0;
+            background: #fff;
+            box-shadow: transparent;
+            text-shadow: none;
+            font: 12px/24px Roboto, sans-serif;
+         }
+      }
+      button{
+         color: #fff;
+         background-color: $green;
+         text-transform: capitalize;
+         height: 45px;
+         padding: 0 35px;
+         outline: inherit;
+         border: none;
+         cursor: pointer;
+         margin: 20px 0 65px 220px;
+      }
+   }
+}
+
+
 // media requests
 @import 'media';

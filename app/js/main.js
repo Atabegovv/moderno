@@ -35,6 +35,9 @@ $(function () {
     }).eq(0).addClass("active");
 
 
+    //form styler 
+        $('input[type="file"], select').styler();    
+
     
 
     var mixer = mixitup('.products__inner-box');
