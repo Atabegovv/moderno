@@ -49,6 +49,10 @@ function scripts(){
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -61,8 +65,11 @@ function styleLibs(){
     return src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/slick-carousel/slick/slick-theme.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css'
+        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
+        'node_modules/@fancyapps/ui/dist/fancybox.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -71,8 +78,8 @@ function styleLibs(){
 }
 
 function styles(){
-    return src('app/scss/style.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
+    return src('app/scss/**/*.scss')
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
