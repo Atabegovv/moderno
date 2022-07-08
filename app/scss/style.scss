@@ -1782,6 +1782,52 @@
                color: $text;
                font-size: 15px;
             }
+            .jq-selectbox{
+               max-width: 538px;
+               width: 100%;
+               outline: inherit;
+               border: 1px solid #dedede;
+               padding-left: 0px;
+               line-height: 40px;
+               
+            }
+            .jq-selectbox__select {
+               height: 35px;
+               padding: 0 15px;
+               border: none;
+               border-bottom-color: transparent;
+               border-radius: 0px;
+               background: #fff;
+               box-shadow: none;
+               font: 14px/35px Roboto, sans-serif;
+               color: #707070;
+               text-shadow: none;
+               outline: inherit;
+            }
+            .jq-selectbox__trigger {
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 0px;
+               height: 100%;
+               border-left: none;
+           }
+           .jq-selectbox__dropdown {
+               width: 100.3%;
+               margin: 0 -1px;
+               padding: 0;
+               border: 1px solid #dedede;
+               border-radius: 0px;
+               background: #FFF;
+               box-shadow: none;
+               font: 14px/24px Roboto,sans-serif;
+            li{
+               padding-left: 15px;
+            }
+           }
+           .jq-selectbox.focused .jq-selectbox__select {
+               border: none;
+           }
             button{
                font-size: 15px;
                border: none;
@@ -2088,6 +2134,8 @@
       }
    }
 }
+
+
 
 
 // media requests
